@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nettel & Brito de Martí — Literatura y Activismo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<noscript>
+  <style>
+    .loader{ display:none !important; }
+    .reveal-fade-up, .reveal-fade-left, .reveal-fade-right, .reveal-fade,
+    .hero .hero-line, .hero .hero-amp, .hero .hero-subtitle, .hero .btn{
+      opacity:1 !important; transform:none !important; animation:none !important;
+    }
+    .cursor-dot, .cursor-glow{ display:none !important; }
+  </style>
+</noscript>
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <svg viewBox="0 0 100 100" class="loader-svg">
+      <circle cx="50" cy="50" r="42" class="loader-circle"/>
+    </svg>
+    <span class="loader-letter">N&B</span>
+  </div>
+</div>
+
+<!-- ============ CURSOR PERSONALIZADO ============ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============ BARRA DE PROGRESO ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ FONDO DECORATIVO GLOBAL ============ -->
+<div class="bg-canvas" aria-hidden="true">
+  <canvas id="particles"></canvas>
+  <div class="grain"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <span class="nav-mark">N&nbsp;&amp;&nbsp;B</span>
+  <ul class="nav-links">
+    <li><a href="#quienes" data-nav>Quiénes fueron</a></li>
+    <li><a href="#union" data-nav>Qué las une</a></li>
+    <li><a href="#cuentos" data-nav>Los cuentos</a></li>
+    <li><a href="#legado" data-nav>Legado</a></li>
+    <li><a href="#conclusion" data-nav>Reflexión</a></li>
+  </ul>
+</nav>
+
+<!-- ============ 1. HERO ============ -->
+<header class="hero" id="hero">
+  <div class="hero-leaves" aria-hidden="true">
+    <svg class="leaf leaf-1" viewBox="0 0 60 60"><path d="M30 5 C45 15 50 35 30 55 C10 35 15 15 30 5 Z"/></svg>
+    <svg class="leaf leaf-2" viewBox="0 0 60 60"><path d="M30 5 C45 15 50 35 30 55 C10 35 15 15 30 5 Z"/></svg>
+  </div>
+
+  <p class="hero-eyebrow reveal-fade-up">Lengua y Literatura — Ensayo comparativo</p>
+
+  <h1 class="hero-title">
+    <span class="hero-line reveal-fade-up" style="--d:0.05s">GUADALUPE</span>
+    <span class="hero-line hero-line--outline reveal-fade-up" style="--d:0.15s">NETTEL</span>
+    <span class="hero-amp reveal-fade-up" style="--d:0.25s">&amp;</span>
+    <span class="hero-line reveal-fade-up" style="--d:0.35s">ESPERANZA</span>
+    <span class="hero-line hero-line--outline reveal-fade-up" style="--d:0.45s">BRITO DE MARTÍ</span>
+  </h1>
+
+  <p class="hero-subtitle reveal-fade-up" style="--d:0.55s">Literatura y activismo:<br>dos caminos hacia la igualdad</p>
+
+  <a href="#quienes" class="btn btn-primary ripple reveal-fade-up" style="--d:0.65s">
+    <span>Explorar</span>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <span></span>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 2. ¿QUIÉNES FUERON? ============ -->
+<section class="section" id="quienes">
+  <p class="section-eyebrow reveal-fade-up">01 — Presentación</p>
+
+  <h2 class="section-title reveal-fade-up">¿Quiénes fueron?</h2>
+
+  <p class="section-lead reveal-fade-up">
+    Dos mujeres, dos oficios distintos, una misma convicción:
+    que las historias —contadas o exigidas— pueden mover al mundo.
+  </p>
+
+  <div class="compare-grid">
+
+    <!-- Guadalupe -->
+    <article class="person-card reveal-fade-left">
+
+      <div class="img-drop has-image">
+        <img
+          class="img-drop-preview"
+          src="guadalupe.png"
+          alt="Guadalupe Nettel">
+      </div>
+
+      <span class="person-tag">Narradora</span>
+
+      <h3>Guadalupe Nettel</h3>
+
+      <p>
+        Escritora mexicana contemporánea. Su obra explora la otredad,
+        el cuerpo y los vínculos afectivos con una mirada íntima,
+        incómoda y profundamente humana. A través de la ficción,
+        desnuda prejuicios que rara vez se nombran en voz alta.
+      </p>
+
+    </article>
+
+    <!-- Separador -->
+
+    <div class="compare-center reveal-fade" aria-hidden="true">
+      <svg width="40" height="120" viewBox="0 0 40 120">
+        <line x1="20" y1="0" x2="20" y2="120" class="vs-line"/>
+      </svg>
+
+      <span class="vs-word">&amp;</span>
+    </div>
+
+    <!-- Esperanza -->
+
+    <article class="person-card reveal-fade-right">
+
+      <div class="img-drop has-image">
+        <img
+          class="img-drop-preview"
+          src="esperanza.png"
+          alt="Esperanza Brito de Martí">
+      </div>
+
+      <span class="person-tag">Activista</span>
+
+      <h3>Esperanza Brito de Martí</h3>
+
+      <p>
+        Periodista y activista mexicana, figura clave del feminismo en
+        México. Fundadora de espacios de defensa de los derechos de las
+        mujeres, dedicó su vida a exigir en las calles y en la prensa
+        lo que otras apenas podían imaginar en papel.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- ============ 3. ¿QUÉ LAS UNE? ============ -->
+<section class="section section--union" id="union">
+  <p class="section-eyebrow reveal-fade-up">02 — El punto de encuentro</p>
+  <h2 class="section-title reveal-fade-up">¿Qué las une?</h2>
+  <p class="section-lead reveal-fade-up">Una escribió mundos; la otra los exigió. Ambas caminos convergen en un mismo destino.</p>
+
+  <div class="union-web" id="unionWeb">
+    <svg class="union-lines" viewBox="0 0 800 620" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <line class="u-line" x1="400" y1="310" x2="400" y2="90"/>
+      <line class="u-line" x1="400" y1="310" x2="670" y2="230"/>
+      <line class="u-line" x1="400" y1="310" x2="670" y2="420"/>
+      <line class="u-line" x1="400" y1="310" x2="400" y2="540"/>
+      <line class="u-line" x1="400" y1="310" x2="130" y2="420"/>
+      <line class="u-line" x1="400" y1="310" x2="130" y2="230"/>
+    </svg>
+
+    <div class="union-center reveal-fade">
+      <span>IGUALDAD</span>
+    </div>
+
+    <div class="union-card union-card--top reveal-fade-up">
+      <div class="icon icon-book"><svg viewBox="0 0 64 40"><path class="book-cover-l" d="M32 8 C22 4 10 5 4 9 V33 C10 29 22 28 32 32Z"/><path class="book-cover-r" d="M32 8 C42 4 54 5 60 9 V33 C54 29 42 28 32 32Z"/><line class="book-page" x1="32" y1="10" x2="32" y2="30"/></svg></div>
+      <h3>Literatura</h3>
+      <p>Ficción que revela lo que el silencio esconde.</p>
+    </div>
+
+    <div class="union-card union-card--right-top reveal-fade-right">
+      <div class="icon icon-heart"><svg viewBox="0 0 40 36"><path d="M20 33 C4 22 1 11 8 6 C13 2 19 5 20 11 C21 5 27 2 32 6 C39 11 36 22 20 33Z"/></svg></div>
+      <h3>Activismo</h3>
+      <p>Voz colectiva que exige lo que la ley aún debe.</p>
+    </div>
+
+    <div class="union-card union-card--right-bottom reveal-fade-right">
+      <div class="icon icon-scale"><svg viewBox="0 0 60 50"><line class="scale-post" x1="30" y1="4" x2="30" y2="42"/><line class="scale-bar" x1="8" y1="14" x2="52" y2="14"/><path class="scale-l" d="M8 14 L2 28 A9 9 0 0018 28 Z"/><path class="scale-r" d="M52 14 L46 28 A9 9 0 0062 28 Z" transform="translate(-4,0)"/><line x1="14" y1="46" x2="46" y2="46" stroke-width="3"/></svg></div>
+      <h3>Derechos</h3>
+      <p>Marcos que deben ampliarse para nombrar a todas.</p>
+    </div>
+
+    <div class="union-card union-card--bottom reveal-fade-up">
+      <div class="icon icon-mushroom"><svg viewBox="0 0 50 50"><path class="mush-cap" d="M8 24 C8 10 42 10 42 24 Z"/><line class="mush-stem" x1="25" y1="24" x2="25" y2="42"/></svg></div>
+      <h3>Romper estereotipos</h3>
+      <p>Cuerpos, deseos e identidades fuera del molde.</p>
+    </div>
+
+    <div class="union-card union-card--left-bottom reveal-fade-left">
+      <div class="icon icon-fish"><svg viewBox="0 0 50 30"><path class="fish-body" d="M4 15 C14 2 34 2 44 15 C34 28 14 28 4 15Z"/><path class="fish-tail" d="M2 15 L-6 6 L-6 24Z"/></svg></div>
+      <h3>Vínculos</h3>
+      <p>Formas de amar que no siempre caben en un molde.</p>
+    </div>
+
+    <div class="union-card union-card--left-top reveal-fade-left">
+      <div class="icon icon-speech"><svg viewBox="0 0 50 40"><path class="speech-bubble" d="M6 6h38a4 4 0 014 4v16a4 4 0 01-4 4H20l-9 8v-8H6a4 4 0 01-4-4V10a4 4 0 014-4Z"/></svg></div>
+      <h3>Prensa y palabra</h3>
+      <p>Dos formas de poner en circulación una verdad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. LOS CUENTOS ============ -->
+<section class="section" id="cuentos">
+  <p class="section-eyebrow reveal-fade-up">03 — La obra de Nettel</p>
+  <h2 class="section-title reveal-fade-up">Los cuentos</h2>
+  <p class="section-lead reveal-fade-up">Dos relatos donde lo íntimo se vuelve político.</p>
+
+  <div class="story-grid">
+    <article class="story-card reveal-fade-up" data-tilt>
+      <div class="story-icon icon-mushroom-big">
+        <svg viewBox="0 0 80 80"><path class="mush-cap-big" d="M14 40 C14 16 66 16 66 40Z"/><line class="mush-stem-big" x1="40" y1="40" x2="40" y2="68"/><circle class="mush-spot" cx="30" cy="26" r="2"/><circle class="mush-spot" cx="46" cy="22" r="2"/><circle class="mush-spot" cx="54" cy="30" r="2"/></svg>
+      </div>
+      <span class="story-tag">Cuento</span>
+      <h3>Hongos</h3>
+      <p>Una relación marcada por una infección silenciosa se convierte en metáfora de todo aquello que crece sin ser nombrado: el estigma, el cuerpo y lo que se prefiere no contar.</p>
+    </article>
+
+    <article class="story-card reveal-fade-up" data-tilt style="--d:0.15s">
+      <div class="story-icon icon-fish-big">
+        <svg viewBox="0 0 90 60">
+          <path class="fish-body-big fish-a" d="M10 30 C22 12 48 12 60 30 C48 48 22 48 10 30Z"/>
+          <path class="fish-tail-big fish-a" d="M8 30 L-6 18 L-6 42Z"/>
+          <path class="fish-body-big fish-b" d="M30 30 C42 12 68 12 80 30 C68 48 42 48 30 30Z"/>
+          <path class="fish-tail-big fish-b" d="M28 30 L14 18 L14 42Z"/>
+        </svg>
+      </div>
+      <span class="story-tag">Cuento</span>
+      <h3>El matrimonio de los peces rojos</h3>
+      <p>Una pareja de peces en una pecera compartida traza el retrato de dos personas que conviven sin realmente encontrarse, un espejo de vínculos que se sostienen por costumbre más que por deseo.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 5. LEGADO ============ -->
+<section class="section section--legado" id="legado">
+  <p class="section-eyebrow reveal-fade-up">04 — Después de ellas</p>
+  <h2 class="section-title reveal-fade-up">Legado</h2>
+
+  <div class="timeline">
+    <div class="timeline-line" aria-hidden="true"></div>
+
+    <div class="timeline-item reveal-fade-right">
+      <div class="timeline-icon icon-newspaper">
+        <svg viewBox="0 0 60 46"><rect class="news-fold" x="6" y="6" width="48" height="34" rx="1"/><line class="news-line" x1="12" y1="16" x2="30" y2="16"/><line class="news-line" x1="12" y1="22" x2="48" y2="22"/><line class="news-line" x1="12" y1="28" x2="48" y2="28"/><line class="news-line" x1="12" y1="34" x2="40" y2="34"/></svg>
+      </div>
+      <div class="timeline-text">
+        <span class="timeline-tag">Activismo</span>
+        <h3>Una prensa que exige</h3>
+        <p>El trabajo periodístico de Esperanza Brito de Martí abrió espacio a temas que antes no tenían titular: violencia, salud reproductiva y derechos de las mujeres.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item timeline-item--reverse reveal-fade-left">
+      <div class="timeline-icon icon-house">
+        <svg viewBox="0 0 60 54" class="house-draw"><path class="house-path" d="M6 26 L30 6 L54 26 M12 24 V48 H48 V24 M26 48 V32 H34 V48"/></svg>
+      </div>
+      <div class="timeline-text">
+        <span class="timeline-tag">Literatura</span>
+        <h3>Casas, cuerpos y otredades</h3>
+        <p>Nettel construyó espacios narrativos —literales y simbólicos— donde lo distinto puede finalmente habitar sin pedir permiso.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal-fade-right">
+      <div class="timeline-icon icon-pen">
+        <svg viewBox="0 0 60 50" class="pen-write"><path class="pen-body" d="M40 6 L52 18 L20 50 L6 50 L6 36Z"/><path class="pen-line" d="M8 44 Q 20 40 30 44 T 48 42"/></svg>
+      </div>
+      <div class="timeline-text">
+        <span class="timeline-tag">Herencia compartida</span>
+        <h3>Nuevas generaciones</h3>
+        <p>Autoras y activistas actuales retoman ambos caminos: la ficción como espejo y la exigencia pública como palanca de cambio real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. CONCLUSIÓN ============ -->
+<section class="section section--conclusion" id="conclusion">
+  <div class="conclusion-icon icon-speech-big">
+    <svg viewBox="0 0 70 56"><path class="speech-bubble-big" d="M8 8h54a5 5 0 015 5v22a5 5 0 01-5 5H28l-12 11v-11H8a5 5 0 01-5-5V13a5 5 0 015-5Z"/></svg>
+  </div>
+  <h2 class="conclusion-title reveal-fade-up">¿Por qué estudiarlas hoy?</h2>
+  <p class="section-lead reveal-fade-up">Porque la igualdad no se logra una sola vez. Cada generación necesita sus propias historias y sus propias exigencias.</p>
+
+  <div class="final-grid">
+    <div class="final-card reveal-fade-up"><span>Literatura</span><p>Nombra lo que aún no tiene palabras.</p></div>
+    <div class="final-card reveal-fade-up" style="--d:0.1s"><span>Igualdad</span><p>El horizonte común de ambas obras.</p></div>
+    <div class="final-card reveal-fade-up" style="--d:0.2s"><span>Derechos</span><p>Lo que se exige deja de ser favor.</p></div>
+    <div class="final-card reveal-fade-up" style="--d:0.3s"><span>Reflexión</span><p>Leer y actuar como un mismo gesto.</p></div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 7. DESCARGAR EL TRABAJO ============ -->
+<section class="section section--download" id="descarga">
+  <div class="download-deco" aria-hidden="true">
+    <svg class="download-leaf download-leaf-l" viewBox="0 0 60 60"><path d="M30 5 C45 15 50 35 30 55 C10 35 15 15 30 5 Z"/></svg>
+    <svg class="download-leaf download-leaf-r" viewBox="0 0 60 60"><path d="M30 5 C45 15 50 35 30 55 C10 35 15 15 30 5 Z"/></svg>
+    <span class="download-dot download-dot-1"></span>
+    <span class="download-dot download-dot-2"></span>
+    <span class="download-dot download-dot-3"></span>
+  </div>
+
+  <p class="section-eyebrow reveal-fade-up">05 — Compartir</p>
+  <h2 class="section-title reveal-fade-up">Descargar el trabajo completo</h2>
+  <p class="section-lead reveal-fade-up" style="margin-bottom:2.6rem;">Si deseas leer el trabajo completo, puedes descargar el documento en formato PDF.</p>
+
+  <div class="download-cta reveal-fade-up" style="--d:0.1s">
+    <svg class="download-rule download-rule-l" viewBox="0 0 120 2" aria-hidden="true"><line x1="0" y1="1" x2="120" y2="1"/></svg>
+
+    <!--
+      PDF_URL: reemplaza el "#" de href más abajo, o edita la constante
+      PDF_URL en script.js — ambos apuntan al mismo enlace.
+    -->
+<a href="https://docs.google.com/document/d/1PJ9PhKu-eqFDrwbHVq_QLNxNdc5He0aw/edit?usp=sharing&ouid=107266050987504228891&rtpof=true&sd=true"
+   id="downloadPdfBtn"
+   class="btn btn-download ripple"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Ver el trabajo completo">
+
+  <span class="icon-doc">
+    <svg viewBox="0 0 30 36" fill="none">
+      <path class="doc-outline" d="M6 2h13l6 6v26a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2Z"/>
+      <path class="doc-fold" d="M19 2v6h6"/>
+      <line class="doc-line" x1="8" y1="17" x2="22" y2="17"/>
+      <line class="doc-line" x1="8" y1="22" x2="22" y2="22"/>
+      <line class="doc-line" x1="8" y1="27" x2="16" y2="27"/>
+    </svg>
+  </span>
+
+  <span>Ver trabajo completo</span>
+
+</a>
+
+    <svg class="download-rule download-rule-r" viewBox="0 0 120 2" aria-hidden="true"><line x1="0" y1="1" x2="120" y2="1"/></svg>
+  </div>
+
+  <p class="download-quote reveal-fade-up" style="--d:0.2s">La literatura también vive cuando se comparte.</p>
+</section>
+
+<footer class="footer">
+  <p>Trabajo de Lengua y Literatura — Guadalupe Nettel &amp; Esperanza Brito de Martí</p>
+</footer>
+
+<button class="back-to-top ripple" id="backToTop" aria-label="Volver arriba">
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 15V3M3 8l6-6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
